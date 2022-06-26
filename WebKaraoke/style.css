@@ -83,11 +83,13 @@ h1.title {
     background: #101010;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
 }
 
 .region {
     padding: 5px 0;
     background: #323232;
+    cursor: pointer;
 }
 
 .region:last-of-type {
@@ -98,6 +100,7 @@ h1.title {
         font-size: 16px;
         padding: 10px 35px 0;
         position: relative;
+        cursor: pointer;
     }
 
         .region h2.title-region::before,
@@ -109,6 +112,7 @@ h1.title {
             left: 15px;
             top: 19.5px;
             width: 11px;
+            cursor: pointer;
         }
 
         .region h2.title-region::after {
@@ -127,8 +131,14 @@ h1.title {
 
         .region .listing li {
             padding: 5px 10px;
-            font-size: 13px;
+            font-size: 15px;
+            cursor: pointer;
         }
+
+            .region .listing li h3 {
+                padding: 0px 20px;
+                font-size: 15px;
+            }
 
             .region .listing li .lyrics {
                 display: none;
@@ -137,4 +147,5 @@ h1.title {
                 padding: 7px;
                 line-height: 1.6;
                 margin-top: 10px;
+                font-size: 14px;
             }
