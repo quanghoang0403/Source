@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+body,
+input,
+button,
+option,
+textarea,
+label,
+select,
+legend,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    font: 14px/18px Helvetica, Helvetica Neue, Arial, sans-serif;
+    color: #fff;
+    line-height: 1.4;
+    outline: none;
+}
+
+body.hidden {
+    overflow: hidden;
+}
+
+a {
+    transition: .3s;
+}
+
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    text-rendering: geometricPrecision;
+}
+
+input[type=text],
+input[type=tel],
+textarea {
+    -webkit-appearance: none;
+}
+
+/*START*/
+
+h1.title {
+    display: block;
+    font-size: 18px;
+    height: 40px;
+    font-weight: bold;
+    background: #101010;
+    text-align: center;
+    line-height: 40px;
+}
+
+.region {
+    padding: 5px 0;
+    background: #323232;
+}
+
+.region:last-of-type {
+    padding-bottom: 20px;
+}
+
+    .region .title-region {
+        font-size: 16px;
+        padding: 10px 35px 0;
+        position: relative;
+    }
+
+        .region h2.title-region::before,
+        .region h2.title-region::after {
+            background-color: #fff;
+            content: '';
+            height: 1px;
+            position: absolute;
+            left: 15px;
+            top: 19.5px;
+            width: 11px;
+        }
+
+        .region h2.title-region::after {
+            transform: rotate(90deg);
+            transition: .3s;
+        }
+
+        .region.active h2.title-region::after {
+            transform: rotate(0deg);
+        }
+
+    .region .listing {
+        display: none;
+        margin: 5px;
+    }
+
+        .region .listing li {
+            padding: 5px 10px;
+            font-size: 13px;
+        }
+
+            .region .listing li .lyrics {
+                display: none;
+                background: #3E3E3F;
+                border-radius: 8px;
+                padding: 7px;
+                line-height: 1.6;
+                margin-top: 10px;
+            }
